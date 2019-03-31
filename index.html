@@ -179,7 +179,7 @@ function addMarkerByAddress(address) {
             });
             rentMarkerArray.push(rentMarker);
 
-            rentMarker.content = "<div>房源：<a target = '_blank' href='https://bj.58.com/pinpaigongyu/?key=" + address + "'>" + address + "</a><div>"
+            rentMarker.content = "<div>房源：<a target = '_blank' href='https://hf.58.com/pinpaigongyu/?key=" + address + "'>" + address + "</a><div>"
             rentMarker.on('click', function(e) {
                 infoWindow.setContent(e.target.content);
                 infoWindow.open(map, e.target.getPosition());
